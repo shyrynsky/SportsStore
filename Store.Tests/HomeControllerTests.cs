@@ -87,6 +87,4 @@ public class HomeControllerTests
         Assert.Equal(5, pageInfo.TotalItems);
         Assert.Equal(2, pageInfo.TotalPages);
     }
-    
-    //TODO если указать страницу <1 то выкинет исключение
 }
