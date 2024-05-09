@@ -4,14 +4,22 @@
     <meta name="viewport" content="width=device-width"/>
     <title>Store</title>
     <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"/>
+    <link href="/lib/font-awesome/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="bg-dark text-white p-2">
-    <span class="navbar-brand ml-2">Store</span>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col navbar-brand">STORE</div>
+            <div class="col-6 navbar-text text-end">
+                <vc:cart-summary/>
+            </div>
+        </div>
+    </div>
 </header>
 <div class="row m-1 p-1">
     <div id="categories" class="col-3">
-        <vc:navigation-menu />
+        <vc:navigation-menu/>
     </div>
     <div class="col-9">
         @RenderBody()
