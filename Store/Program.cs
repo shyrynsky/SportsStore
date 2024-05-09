@@ -12,6 +12,7 @@ builder.Services.AddDbContext<StoreDbContext>(opts =>
 });
 
 builder.Services.AddScoped<IStoreRepository, EfStoreRepository>();
+builder.Services.AddScoped<IOrderRepository, EfOrderRepository>();
 
 builder.Services.AddRazorPages();
 builder.Services.AddDistributedMemoryCache();
